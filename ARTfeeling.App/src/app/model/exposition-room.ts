@@ -1,9 +1,9 @@
 export class ExpositionRoom {
-    Id: number;
-    Name: string;
-    Address: string;
-    ZipCode: string;
-    Community: string;
-    Country: string;
-    Url: string;
+    id: number;
+    name: string;
+    address: string;
+    zipCode: string;
+    community: string;
+    country: string;
+    url: string;
 }

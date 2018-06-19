@@ -2,14 +2,14 @@ import { ArtType } from "./art-type.enum";
 import { ExpositionRoom } from "./exposition-room";
 
 export class Artwork {
-    Id: number;
-    Title: string;
-    Remarks: string;
-    Height: number;
-    Width: number;
-    Depth: number;
-    TypeOfArtWork: ArtType;
+    id: number;
+    title: string;
+    remarks: string;
+    height: number;
+    width: number;
+    depth: number;
+    typeOfArtWork: ArtType;
 
-    Pictures: string[];
-    ExposedAt: ExpositionRoom;
+    pictures: string;
+    exposedAt: ExpositionRoom;
 }
