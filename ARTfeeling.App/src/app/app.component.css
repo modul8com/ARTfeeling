@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    min-height: 100%
 }
 
 .modul8_header {
