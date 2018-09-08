@@ -1,27 +1,37 @@
 .modul8_container {
     display: flex;
-    flex-flow: column;
     flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
-.modul8_container > * {
-    flex: 1 100%;
-  }
-
 .modul8_header {
-    flex-flow: 1;
+    flex-grow: 0;
     height: 95px;
     background: #6666EE;
     color: #EEEEEE;
 }
 
 .modul8_content {
-    flex-flow: 2;
+    flex-grow: 1;
+    padding: 10px;
 }
 
 .modul8_footer {
-    flex-flow: 1;
+    flex-grow: 0;
     height: 25px;
     background: #6666EE;
     color: #EEEEEE;
+    justify-content: center
+}
+
+.nav-link {
+    color: #DDDDDD;
+    background-color: #8888EE;
+    margin-left: 10px
+}
+
+footer a {
+    color: #DDDDDD;
 }
