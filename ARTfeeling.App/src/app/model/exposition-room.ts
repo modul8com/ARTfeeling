@@ -1,5 +1,7 @@
 export class ExpositionRoom {
-    id: number;
+    partitionKey: string;
+    rowKey: string;
+    
     name: string;
     address: string;
     zipCode: string;

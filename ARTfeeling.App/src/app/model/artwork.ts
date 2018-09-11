@@ -2,7 +2,8 @@ import { ArtType } from "./art-type.enum";
 import { ExpositionRoom } from "./exposition-room";
 
 export class Artwork {
-    id: number;
+    partitionKey: string;
+    rowKey: string;
     title: string;
     remarks: string;
     height: number;
@@ -11,5 +12,6 @@ export class Artwork {
     typeOfArtWork: ArtType;
 
     pictures: string;
-    exposedAt: ExpositionRoom;
+    exposedAtpartitionKey: string;
+    exposedAtrowKey: string;
 }
