@@ -11,7 +11,7 @@ export class Artwork {
     depth: number;
     typeOfArtWork: ArtType;
 
-    pictures: string;
+    pictures: string[];
     exposedAtpartitionKey: string;
     exposedAtrowKey: string;
 }
