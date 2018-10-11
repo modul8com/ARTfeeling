@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ArtworkRepository } from './repository/artwork-repository';
 
 @NgModule({
   declarations: [
@@ -10,9 +12,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     PortfolioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ ArtworkRepository ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

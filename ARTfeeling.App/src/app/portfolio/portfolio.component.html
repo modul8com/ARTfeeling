@@ -1,2 +1,18 @@
 <h2>Ellen Jervis' portfolio</h2>
 
+<div>
+    <div *ngFor="let artwork of portfolio">
+        <label>partitionKey</label>: {{artwork.partitionKey}}
+        <label>rowKey</label>: {{artwork.rowKey}}
+        <label>title</label>: {{artwork.title}}
+        <label>remarks</label>: {{artwork.remarks}}
+        <label>height</label>: {{artwork.height}}
+        <label>width</label>: {{artwork.width}}
+        <label>depth</label>: {{artwork.depth}}
+        <label>typeOfArtWork</label>: {{artwork.typeOfArtWork}}
+    
+        <label>pictures</label>: {{artwork.pictures}}
+        <label>exposedAtpartitionKey</label>: {{artwork.exposedAtpartitionKey}}
+        <label>exposedAtrowKey</label>: {{artwork.exposedAtrowKey}}
+    </div>
+</div>

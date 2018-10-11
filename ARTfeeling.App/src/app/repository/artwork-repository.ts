@@ -1,17 +1,13 @@
-import { OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
-import { Artwork } from '../model/artwork';
+@Injectable({
+    providedIn: 'root'
+})
+export class ArtworkRepository {
+    constructor(private http: HttpClient) { }
 
-export class ArtworkRepository implements OnInit {
-    getArtwork() {
-        const artworks = of<Artwork>(
-            
-
-        );
-    }
-
-    ngOnInit() {
-
+    getArtworks() {
+        return this.http.get('https://artfeelingsrvr.azurewebsites.net/api/artwork?code=uQqDuVYNVG7OPCwep7mGkm3eJD9W60BQsU0xSsuQrKrIiQjax/ePhw==');
     }
 }

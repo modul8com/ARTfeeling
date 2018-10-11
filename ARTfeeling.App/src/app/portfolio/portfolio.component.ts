@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtworkRepository } from '../repository/artwork-repository';
+import { Artwork } from '../model/artwork';
 
 @Component({
   selector: 'modul8-portfolio',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  portfolio: Artwork[];
+
+  constructor(private repo: ArtworkRepository) { }
 
   ngOnInit() {
+    this.repo.getArtworks().subscribe((data: Artwork[]) => {
+        this.portfolio = data;
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 
 }
