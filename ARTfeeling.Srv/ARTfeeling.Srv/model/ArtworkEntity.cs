@@ -13,11 +13,13 @@ namespace ARTfeeling.Srv.model
         public int Height { get; set; }
         public int Width { get; set; }
         public int Depth { get; set; }
-        public int TypeOfArtWork { get; set; }
+        public int TypeOfArtwork { get; set; }
 
         public string[] Pictures { get; set; }
 
         public string ExposedAtpartitionKey { get; set; }
         public string ExposedAtrowKey { get; set; }
+
+        public double Price { get; set; }
     }
 }

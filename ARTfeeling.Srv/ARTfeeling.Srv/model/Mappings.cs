@@ -18,12 +18,14 @@ namespace ARTfeeling.Srv.model
                 Height = artwork.Height,
                 Width = artwork.Width,
                 Depth = artwork.Depth,
-                TypeOfArtWork = (int)artwork.TypeOfArtWork,
+                TypeOfArtwork = (int)artwork.TypeOfArtwork,
 
                 Pictures = artwork.Pictures,
 
                 ExposedAtpartitionKey = artwork.ExposedAtpartitionKey,
-                ExposedAtrowKey = artwork.ExposedAtrowKey
+                ExposedAtrowKey = artwork.ExposedAtrowKey,
+
+                Price = artwork.Price
             };
         }
 
@@ -38,12 +40,14 @@ namespace ARTfeeling.Srv.model
                 Height = artwork.Height,
                 Width = artwork.Width,
                 Depth = artwork.Depth,
-                TypeOfArtWork = (ArtType)artwork.TypeOfArtWork,
+                TypeOfArtwork = (ArtType)artwork.TypeOfArtwork,
 
                 Pictures = artwork.Pictures,
 
                 ExposedAtpartitionKey = artwork.ExposedAtpartitionKey,
-                ExposedAtrowKey = artwork.ExposedAtrowKey
+                ExposedAtrowKey = artwork.ExposedAtrowKey,
+
+                Price = artwork.Price
             };
         }
     }

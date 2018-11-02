@@ -17,7 +17,7 @@ namespace ARTfeeling.Srv
     public static class UpdateArtwork
     {
         [FunctionName("UpdateArtwork")]
-        public static async Task<IActionResult> Run(
+        public static async Task<IActionResult> RunUpdateArtwork(
             [HttpTrigger(AuthorizationLevel.Function, "put", Route = "artwork/{id}")]HttpRequest req, 
             [Table("Artwork", Connection = "AzureWebJobsStorage")] CloudTable artworkTable,
             ILogger log, string id)
@@ -38,7 +38,7 @@ namespace ARTfeeling.Srv
             existingRow.Height = updated.Height;
             existingRow.Width = updated.Width;
             existingRow.Depth = updated.Depth;
-            existingRow.TypeOfArtWork = (int)updated.TypeOfArtWork;
+            existingRow.TypeOfArtwork = (int)updated.TypeOfArtwork;
             existingRow.Pictures = updated.Pictures;
             existingRow.ExposedAtpartitionKey = updated.ExposedAtpartitionKey;
             existingRow.ExposedAtrowKey = updated.ExposedAtrowKey;

@@ -19,8 +19,8 @@ namespace ARTfeeling.Srv.model
         public int Width { get; set; }
         [JsonProperty("depth")]
         public int Depth { get; set; }
-        [JsonProperty("typeOfArtWork")]
-        public ArtType TypeOfArtWork { get; set; }
+        [JsonProperty("typeOfArtwork")]
+        public ArtType TypeOfArtwork { get; set; }
 
         [JsonProperty("pictures")]
         public string[] Pictures { get; set; }
@@ -29,5 +29,8 @@ namespace ARTfeeling.Srv.model
         public string ExposedAtpartitionKey { get; set; }
         [JsonProperty("exposedAtrowKey")]
         public string ExposedAtrowKey { get; set; }
+
+        [JsonProperty("price")]
+        public double Price { get; set; }
     }
 }
