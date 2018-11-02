@@ -18,7 +18,7 @@ namespace ARTfeeling.Srv
     {
         [FunctionName("UpdateArtwork")]
         public static async Task<IActionResult> RunUpdateArtwork(
-            [HttpTrigger(AuthorizationLevel.Function, "put", Route = "artwork/{id}")]HttpRequest req, 
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "artwork/{id}")]HttpRequest req, 
             [Table("Artwork", Connection = "AzureWebJobsStorage")] CloudTable artworkTable,
             ILogger log, string id)
         {

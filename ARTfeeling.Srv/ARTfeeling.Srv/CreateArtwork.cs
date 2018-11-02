@@ -17,7 +17,7 @@ namespace ARTfeeling.Srv
     {
         [FunctionName("CreateArtwork")]
         public static async Task<IActionResult> RunCreateArtwork(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "artwork")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "put", Route = "artwork")] HttpRequest req,
             [Table("Artwork", Connection = "AzureWebJobsStorage")] IAsyncCollector<ArtworkEntity> artworkTable,
             ILogger log)
         {
